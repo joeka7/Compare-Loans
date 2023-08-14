@@ -1,107 +1,69 @@
-const usdRangeInput = document.getElementById("usdRange");
-const rangeValueDisplay = document.getElementById("rangeValue");
-const usdRangeInput2 = document.getElementById("usdRange2");
-const rangeValueDisplay2 = document.getElementById("rangeValue2");
-const usdRangeInput3 = document.getElementById("usdRange3");
-const rangeValueDisplay3 = document.getElementById("rangeValue3");
-let quotationsOne = document.querySelector(".quotations-one");
-let quotationsTwo = document.querySelector(".quotations-two");
-let quotationsThree = document.querySelector(".quotations-three");
-let quotationsFour = document.querySelector(".quotations-four");
-let quotationsFive = document.querySelector(".quotations-five");
-let quotationsSix = document.querySelector(".quotations-six");
-let quotationsSeven = document.querySelector(".quotations-seven");
+const rangeInputOne = document.getElementById("usdRangeOne");
+const rangeValueOne = document.getElementById("rangeValueOne");
+const rangeInputTwo = document.getElementById("usdRangeTwo");
+const rangeValueTwo = document.getElementById("rangeValueTwo");
+const rangeInputThree = document.getElementById("usdRangeThree");
+const rangeValueThree = document.getElementById("rangeValueThree");
+let questionsOne = document.querySelector(".questions-one");
+let questionsTwo = document.querySelector(".questions-two");
+let questionsThree = document.querySelector(".questions-three");
+let questionsFour = document.querySelector(".questions-four");
+let questionsFive = document.querySelector(".questions-five");
+let questionsSix = document.querySelector(".questions-six");
+let questionsSeven = document.querySelector(".questions-seven");
 let progressColor = document.querySelector(".color");
+let btnQuestionsOne = document.querySelectorAll(".questions-one button");
+let btnQuestionsTwo = document.querySelectorAll(".questions-two button");
+let btnQuestionsFour = document.querySelectorAll(".questions-four button");
+let btnQuestionsTwoBack = document.querySelector(".questions-two .back");
+let btnQuestionsFourBack = document.querySelector(".questions-four .back");
+let btnQuestionsSevenBack = document.querySelector(".questions-seven .back");
+let continueBtnQThree = document.querySelector(".questions-three .continue");
+let continueBtnQFive = document.querySelector(".questions-five .continue");
+let continueBtnQSix = document.querySelector(".questions-six .continue");
 
-usdRangeInput.addEventListener("input", () => {
-  const value = usdRangeInput.value;
-  rangeValueDisplay.textContent = `$ ${value}`;
-});
-usdRangeInput2.addEventListener("input", () => {
-  const value = usdRangeInput2.value;
-  rangeValueDisplay2.textContent = `$ ${value}`;
-});
-usdRangeInput3.addEventListener("input", () => {
-  const value = usdRangeInput3.value;
-  rangeValueDisplay3.textContent = `$ ${value}`;
-});
+// Range Input
+function rangeInput(range, rangeValue) {
+  range.addEventListener("input", () => {
+    const value = range.value;
+    rangeValue.textContent = `$ ${value}`;
+  });
+}
+rangeInput(rangeInputOne, rangeValueOne);
+rangeInput(rangeInputTwo, rangeValueTwo);
+rangeInput(rangeInputThree, rangeValueThree);
 
-let btnQuotationsOne = document.querySelectorAll(
-  ".quotations-one .buttons button"
-);
-btnQuotationsOne.forEach((e) => {
-  e.onclick = () => {
-    quotationsOne.style.display = "none";
-    quotationsTwo.style.display = "block";
-    progressColor.style.width = "22.22%";
+// buttons in questions
+function btnQuestions(btns, hideQuestion, showQuestion, progress) {
+  btns.forEach((e) => {
+    e.onclick = () => {
+      hideQuestion.style.display = "none";
+      showQuestion.style.display = "block";
+    };
+  });
+}
+btnQuestions(btnQuestionsOne, questionsOne, questionsTwo, progressColor);
+btnQuestions(btnQuestionsTwo, questionsTwo, questionsThree, progressColor);
+btnQuestions(btnQuestionsFour, questionsFour, questionsFive, progressColor);
+
+// Back Buttons
+function backBtn(btn, hideByBackBtn, showByBakcBtn) {
+  btn.onclick = () => {
+    hideByBackBtn.style.display = "none";
+    showByBakcBtn.style.display = "block";
   };
-});
+}
+backBtn(btnQuestionsTwoBack, questionsTwo, questionsOne);
+backBtn(btnQuestionsFourBack, questionsFour, questionsThree);
+backBtn(btnQuestionsSevenBack, questionsSeven, questionsSix);
 
-let btnQuotationsTwo = document.querySelectorAll(
-  ".quotations-two .buttons button"
-);
-btnQuotationsTwo.forEach((e) => {
-  e.onclick = () => {
-    quotationsTwo.style.display = "none";
-    quotationsThree.style.display = "block";
-    progressColor.style.width = "33.33%";
+// Continue Buttons
+function continueBtn(btn, hideQuestion, showQuestion) {
+  btn.onclick = () => {
+    hideQuestion.style.display = "none";
+    showQuestion.style.display = "block";
   };
-});
-
-let btnQuotationsTwoBack = (document.querySelector(
-  ".quotations-two .back"
-).onclick = () => {
-  quotationsTwo.style.display = "none";
-  quotationsOne.style.display = "block";
-  progressColor.style.width = "11%";
-});
-
-let continueBtnQThree = (document.querySelector(
-  ".quotations-three .continue"
-).onclick = () => {
-  quotationsThree.style.display = "none";
-  quotationsFour.style.display = "block";
-  progressColor.style.width = "44.44%";
-});
-
-let btnQuotationsFour = document.querySelectorAll(
-  ".quotations-four .buttons button"
-);
-btnQuotationsFour.forEach((e) => {
-  e.onclick = () => {
-    quotationsFour.style.display = "none";
-    quotationsFive.style.display = "block";
-    progressColor.style.width = "55.56%";
-  };
-});
-
-let btnQuotationsFourBack = (document.querySelector(
-  ".quotations-four .back"
-).onclick = () => {
-  quotationsFour.style.display = "none";
-  quotationsThree.style.display = "block";
-});
-
-let continueBtnQFive = (document.querySelector(
-  ".quotations-five .continue"
-).onclick = () => {
-  quotationsFive.style.display = "none";
-  quotationsSix.style.display = "block";
-  progressColor.style.width = "66.67%";
-});
-
-let continueBtnQSix = (document.querySelector(
-  ".quotations-six .continue"
-).onclick = () => {
-  quotationsSix.style.display = "none";
-  quotationsSeven.style.display = "block";
-  progressColor.style.width = "80.67%";
-});
-
-let btnQuotationsSevenBack = (document.querySelector(
-  ".quotations-seven .buttons-container .back"
-).onclick = () => {
-  quotationsSeven.style.display = "none";
-  quotationsSix.style.display = "block";
-  progressColor.style.width = "80.67%";
-});
+}
+continueBtn(continueBtnQThree, questionsThree, questionsFour);
+continueBtn(continueBtnQFive, questionsFive, questionsSix);
+continueBtn(continueBtnQSix, questionsSix, questionsSeven);

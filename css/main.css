@@ -80,64 +80,64 @@ body {
   border-bottom-left-radius: 3px;
   transition: width 0.6s ease;
 }
-.section .container .quotations-one {
+.section .container .questions-one {
   display: block;
 }
-.section .container .quotations-two,
-.section .container .quotations-three,
-.section .container .quotations-four,
-.section .container .quotations-five,
-.section .container .quotations-six,
-.section .container .quotations-seven {
+.section .container .questions-two,
+.section .container .questions-three,
+.section .container .questions-four,
+.section .container .questions-five,
+.section .container .questions-six,
+.section .container .questions-seven {
   display: none;
 }
 @media (max-width: 767px) {
-  .section .container .quotations-one,
-  .section .container .quotations-two,
-  .section .container .quotations-three,
-  .section .container .quotations-four,
-  .section .container .quotations-five,
-  .section .container .quotations-six,
-  .section .container .quotations-seven {
+  .section .container .questions-one,
+  .section .container .questions-two,
+  .section .container .questions-three,
+  .section .container .questions-four,
+  .section .container .questions-five,
+  .section .container .questions-six,
+  .section .container .questions-seven {
     padding: 0 25px;
   }
 }
-.section .container .quotations-one h3,
-.section .container .quotations-two h3,
-.section .container .quotations-three h3,
-.section .container .quotations-four h3,
-.section .container .quotations-five h3,
-.section .container .quotations-six h3 {
+.section .container .questions-one h3,
+.section .container .questions-two h3,
+.section .container .questions-three h3,
+.section .container .questions-four h3,
+.section .container .questions-five h3,
+.section .container .questions-six h3 {
   font-size: 30px;
   letter-spacing: 1px;
 }
 @media (max-width: 767px) {
-  .section .container .quotations-one h3,
-  .section .container .quotations-two h3,
-  .section .container .quotations-three h3,
-  .section .container .quotations-four h3,
-  .section .container .quotations-five h3,
-  .section .container .quotations-six h3 {
+  .section .container .questions-one h3,
+  .section .container .questions-two h3,
+  .section .container .questions-three h3,
+  .section .container .questions-four h3,
+  .section .container .questions-five h3,
+  .section .container .questions-six h3 {
     font-size: 20px;
     margin-bottom: 25px;
   }
 }
-.section .container .quotations-one p,
-.section .container .quotations-two p,
-.section .container .quotations-three p,
-.section .container .quotations-four p,
-.section .container .quotations-five p,
-.section .container .quotations-six p {
+.section .container .questions-one p,
+.section .container .questions-two p,
+.section .container .questions-three p,
+.section .container .questions-four p,
+.section .container .questions-five p,
+.section .container .questions-six p {
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
-.section .container .quotations-one .buttons,
-.section .container .quotations-two .buttons,
-.section .container .quotations-three .buttons,
-.section .container .quotations-four .buttons,
-.section .container .quotations-five .buttons,
-.section .container .quotations-six .buttons,
-.section .container .quotations-seven .buttons {
+.section .container .questions-one .buttons,
+.section .container .questions-two .buttons,
+.section .container .questions-three .buttons,
+.section .container .questions-four .buttons,
+.section .container .questions-five .buttons,
+.section .container .questions-six .buttons,
+.section .container .questions-seven .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,17 +145,17 @@ body {
   margin-bottom: 50px;
 }
 @media (max-width: 767px) {
-  .section .container .quotations-one .buttons,
-  .section .container .quotations-two .buttons,
-  .section .container .quotations-three .buttons,
-  .section .container .quotations-five .buttons,
-  .section .container .quotations-six .buttons {
+  .section .container .questions-one .buttons,
+  .section .container .questions-two .buttons,
+  .section .container .questions-three .buttons,
+  .section .container .questions-five .buttons,
+  .section .container .questions-six .buttons {
     flex-direction: column;
     margin-top: 35px;
   }
 }
-.section .container .quotations-one .buttons button,
-.section .container .quotations-four .buttons button {
+.section .container .questions-one .buttons button,
+.section .container .questions-four .buttons button {
   background-color: rgba(255, 255, 255, 1);
   color: #000000;
   font-weight: 700;
@@ -168,12 +168,12 @@ body {
   border: none;
 }
 @media (max-width: 767px) {
-  .section .container .quotations-one .buttons button,
-  .section .container .quotations-four .buttons button {
+  .section .container .questions-one .buttons button,
+  .section .container .questions-four .buttons button {
     padding: 15px 50px;
   }
 }
-.section .container .quotations-two .buttons button {
+.section .container .questions-two .buttons button {
   background-color: rgba(255, 255, 255, 1);
   color: #000000;
   font-weight: 700;
@@ -190,16 +190,16 @@ body {
   align-items: center;
   border: none;
 }
-.section .container .quotations-one .buttons button:hover,
-.section .container .quotations-two .buttons button:hover,
-.section .container .quotations-four .buttons button:hover {
+.section .container .questions-one .buttons button:hover,
+.section .container .questions-two .buttons button:hover,
+.section .container .questions-four .buttons button:hover {
   background-color: rgba(5, 182, 122, 1);
   color: #ffffff;
   font-weight: 700;
 }
-.section .container .quotations-two .back,
-.section .container .quotations-four .back,
-.quotations-seven .buttons-container .back {
+.section .container .questions-two .back,
+.section .container .questions-four .back,
+.questions-seven .buttons-container .back {
   color: black;
   background-color: white;
   padding: 8px 15px;
@@ -208,9 +208,9 @@ body {
   border: none;
   cursor: pointer;
 }
-.section .container .quotations-two .back:active,
-.section .container .quotations-four .back:active,
-.quotations-seven .buttons-container .back:active {
+.section .container .questions-two .back:active,
+.section .container .questions-four .back:active,
+.questions-seven .buttons-container .back:active {
   background: #545b62;
   color: #fff;
   box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.05);
@@ -232,15 +232,15 @@ body {
     margin-top: 80px;
   }
 }
-.quotations-three .range-container {
+.questions-three .range-container {
   width: 80%;
   margin: auto;
 }
-.quotations-three .range-container #rangeValue {
+.questions-three .range-container #rangeValueOne {
   font-size: 25px;
   font-weight: bold;
 }
-.quotations-three .range {
+.questions-three .range {
   width: 100%;
   margin-top: 15px;
   -webkit-appearance: none;
@@ -256,7 +256,7 @@ body {
   transition: opacity 0.2s;
   border-radius: 5px;
 }
-.quotations-three .range::-webkit-slider-thumb {
+.questions-three .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 35px;
@@ -266,9 +266,9 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
-.quotations-three .continue,
-.quotations-five .continue,
-.quotations-six .continue {
+.questions-three .continue,
+.questions-five .continue,
+.questions-six .continue {
   color: white;
   background-color: #1f8ceb;
   padding: 8px 15px;
@@ -277,22 +277,56 @@ body {
   border: none;
   cursor: pointer;
 }
-.quotations-three .continue:active,
-.quotations-five .continue:active,
-.quotations-six .continue:active {
+.questions-three .continue:active,
+.questions-five .continue:active,
+.questions-six .continue:active {
   color: #fff;
   background-color: #286090;
 }
-/* ******************************* */
-.quotations-five .range-container {
+.questions-five .range-container {
   width: 80%;
   margin: auto;
 }
-.quotations-five .range-container #rangeValue2 {
+.questions-five .range-container #rangeValueTwo {
   font-size: 25px;
   font-weight: bold;
 }
-.quotations-five .range {
+.questions-five .range {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(19, 19, 27, 0.801) 10%,
+    rgb(5, 182, 122) 80%
+  );
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+.questions-five .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border: 5px solid rgb(8, 139, 96);
+  cursor: pointer;
+  border-radius: 50%;
+}
+.questions-six .range-container {
+  width: 80%;
+  margin: auto;
+}
+.questions-six .range-container #rangeValueThree {
+  font-size: 25px;
+  font-weight: bold;
+}
+.questions-six .range {
   width: 100%;
   margin-top: 15px;
   -webkit-appearance: none;
@@ -308,7 +342,7 @@ body {
   transition: opacity 0.2s;
   border-radius: 5px;
 }
-.quotations-five .range::-webkit-slider-thumb {
+.questions-six .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 35px;
@@ -318,62 +352,27 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
-/* ***************************** */
-.quotations-six .range-container {
-  width: 80%;
-  margin: auto;
-}
-.quotations-six .range-container #rangeValue3 {
-  font-size: 25px;
-  font-weight: bold;
-}
-.quotations-six .range {
-  width: 100%;
-  margin-top: 15px;
-  -webkit-appearance: none;
-  appearance: none;
-  height: 20px;
-  background: linear-gradient(
-    90deg,
-    rgba(19, 19, 27, 0.801) 10%,
-    rgb(5, 182, 122) 80%
-  );
-  outline: none;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
-  border-radius: 5px;
-}
-.quotations-six .range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 35px;
-  height: 35px;
-  background: white;
-  border: 5px solid rgb(8, 139, 96);
-  cursor: pointer;
-  border-radius: 50%;
-}
-.quotations-seven img {
+.questions-seven img {
   width: 60px;
 }
-.quotations-seven h3 {
+.questions-seven h3 {
   font-size: 35px;
   margin: 15px 0 5px;
 }
-.quotations-seven .complete {
+.questions-seven .complete {
   margin-bottom: 40px;
   margin-top: 10px;
   font-size: 18px !important;
   font-weight: 700;
 }
-.quotations-seven .form-container {
+.questions-seven .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 15px;
 }
-.quotations-seven .form-container input {
+.questions-seven .form-container input {
   width: 80%;
   margin: auto;
   height: 50px;
@@ -382,18 +381,18 @@ body {
   border-radius: 5px;
   border: none;
 }
-.quotations-seven .form-container input::placeholder {
+.questions-seven .form-container input::placeholder {
   color: #919191;
   font-size: 14px;
 }
-.quotations-seven .buttons-container {
+.questions-seven .buttons-container {
   margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.quotations-seven .buttons-container .next {
+.questions-seven .buttons-container .next {
   padding: 20px 25px;
   background-color: rgba(5, 182, 122, 1);
   border-radius: 5px;
@@ -404,7 +403,7 @@ body {
   transition: 0.3s;
   opacity: 0.5;
 }
-.quotations-seven .buttons-container .next:hover {
+.questions-seven .buttons-container .next:hover {
   background-color: #000;
 }
 .section .container .info-box .image img {
